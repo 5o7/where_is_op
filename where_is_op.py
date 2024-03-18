@@ -16,7 +16,7 @@ reddit = praw.Reddit(client_id="X",
 s1 = "Rule 2: This subreddit is about discussing older movies that we enjoy. "
 s2 = "If you are not able to contribute to that dialog please refrain from posting."
 
-# A loop will run about every 12 hours
+# A loop of code that run every 12 hours
 
 while True:
 
