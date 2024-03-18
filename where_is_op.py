@@ -1,3 +1,5 @@
+#Tools
+
 import praw
 import time
 
@@ -14,7 +16,7 @@ reddit = praw.Reddit(client_id="X",
 s1 = "Rule 2: This subreddit is about discussing older movies that we enjoy. "
 s2 = "If you are not able to contribute to that dialog please refrain from posting."
 
-# A loop will run about every 6 hours
+# A loop will run about every 12 hours
 
 while True:
 
@@ -28,7 +30,7 @@ while True:
 
             # If the post was made more than 24 hours from the time this line of code runs:
 
-            if int(time.time()) > submission.created_utc + 43200:
+            if int(time.time()) > submission.created_utc + 86400:
 
                 # Put all the submission's comment's authors into a list
 
